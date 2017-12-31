@@ -1,10 +1,62 @@
 
-### 定义变量
-* Java：
+### 注释
 ```aidl
-
+    //单行注释
 ```
-* Kotlin：
 ```aidl
+    /*
+    多行注释
+     */
+```
+```aidl
+    /**
+     * 多行注释
+     */
+```
+* 多行注释
 
+### 定义变量/常量
+* 可变变量定义：var 关键字
+```
+    var <标识符> : <类型> = <初始化值>
+```
+* 不可变变量定义：val 关键字，只能赋值一次的变量(类似Java中final修饰的变量)
+```
+    val <标识符> : <类型> = <初始化值>
+```
+常量与变量都可以没有初始化值,但是在引用前必须初始化
+```
+    var name: String//不指定变量值时需要指定变量类型
+    var name1="SiberiaDante"//指定变量值时不需要指定变量类型
+
+    val name2:String//不指定不可变变量值时需要指定不可变变量类型
+    val name3="SiberiaDante"//指定不可变变量值时不需要指定不可变变量类型
+```
+### 函数/方法
+* 无返回值方法定义
+```aidl
+    /**
+     * Unit 可以省略
+     */
+    fun demo1(): Unit  {}
+```
+```aidl
+    fun demo1(name: String, age: Int) {
+        print("My Name is " + name)
+    }
+```
+* 有返回值的方法
+```aidl
+    /**
+     *不定义返回值类型，系统判断
+     */
+    fun sum1(a: Int, b: Int) = a + b
+```
+```aidl
+    /**
+     * 定义返回类型Int
+     */
+    fun sum2(a: Int, b: Int): Int {
+        return a + b
+    }
 ```
