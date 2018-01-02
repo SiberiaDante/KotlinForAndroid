@@ -1,4 +1,4 @@
-
+# 从零开始学Kotlin-基础语法（1）
 ### 注释
 ```aidl
     //单行注释
@@ -16,11 +16,11 @@
 * 多行注释
 
 ### 定义变量/常量
-* 可变变量定义：var 关键字
+* 变量定义：var 关键字
 ```
     var <标识符> : <类型> = <初始化值>
 ```
-* 不可变变量定义：val 关键字，只能赋值一次的变量(类似Java中final修饰的变量)
+* 常量定义：val 关键字，只能赋值一次的变量(类似Java中final修饰的变量)
 ```
     val <标识符> : <类型> = <初始化值>
 ```
@@ -29,8 +29,8 @@
     var name: String//不指定变量值时需要指定变量类型
     var name1="SiberiaDante"//指定变量值时不需要指定变量类型
 
-    val name2:String//不指定不可变变量值时需要指定不可变变量类型
-    val name3="SiberiaDante"//指定不可变变量值时不需要指定不可变变量类型
+    val name2:String//不指定常量值时需要指定类型
+    val name3="SiberiaDante"//指定常量值时不需要指定类型
 ```
 ### 函数/方法
 * 无返回值方法定义
@@ -60,3 +60,12 @@
         return a + b
     }
 ```
+* 变长参数方法(用varargs关键字标识)
+```
+fun showNums(vararg nums:Int){
+    for(num in nums){//for 循环输出
+        print(num)
+    }
+}
+```
+### 
