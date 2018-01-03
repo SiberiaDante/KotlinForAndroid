@@ -68,4 +68,26 @@ fun showNums(vararg nums:Int){
     }
 }
 ```
-### 
+### Null检查机制
+
+```
+//类型后面加?表示可为空
+var age: String? = "23" 
+//抛出空指针异常
+val ages = age!!.toInt()
+//不做处理返回 null
+val ages1 = age?.toInt()
+//age为空返回-1
+val ages2 = age?.toInt() ?: -1
+```
+使用案例:如下，字符串不是数字是，返回Null，返回类型需要标记为可为Null
+```
+fun strToInt(str:String):Int?{
+	
+}
+```
+### 日志打印
+```
+print("不换行打印")
+println("换行打印")
+```
