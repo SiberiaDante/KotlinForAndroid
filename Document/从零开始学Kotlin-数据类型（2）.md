@@ -36,3 +36,33 @@ val name1="Siberia"
 val name2="Dante"
 val name="My name is:$name1 $name2"
 ```
+## 类型转换
+* 较小的类型不能隐式转换为较大的类型，可以通过显示转换
+```
+var a:int=10;//定义一个Int数据
+var b:Long=a;//Int不能直接转换为Long型
+var b:Long=a.toLong()//可以通过显示转换
+```
+* 几种类型转换方法
+```
+toByte(): Byte
+toShort(): Short
+toInt(): Int
+toLong(): Long
+toFloat(): Float
+toDouble(): Double
+toChar(): Char
+```
+## 比较符
+Kotlin 中没有基础数据类型，只有封装的数字类型，你每定义的一个变量，其实 Kotlin 帮你封装了一个对象，这样可以保证不会出现空指针。比较两个数据大小用"==",比较两个对象地址使用"===";
+```
+var a:Int = 100
+print(a===a)	结果：true
+
+var b:Int =a
+var c:Int =a
+print(b===c)	结果：false
+print(b==c)		结果：true
+
+```
+## 位操作符
