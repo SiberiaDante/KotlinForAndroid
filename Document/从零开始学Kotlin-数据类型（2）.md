@@ -77,6 +77,7 @@ if (charStr in '0'..'9') {
     var result = (charStr.toInt() == 1)
 }
 ```
+* 特殊字符要用反斜杠，如：\t、 \b、\n、\r、\'、\"、\\ 和 \$。
 ## 布尔类型
 * 布尔用 Boolean表示，它有两个值：true 和 false。两个Boolean类型的数值的逻辑比较跟Java一样
 ```
