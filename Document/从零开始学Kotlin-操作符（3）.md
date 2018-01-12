@@ -1,4 +1,5 @@
 从零开始学Kotlin-操作符（3）
+### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)
 ## 冒号操作符 ":" 和 "::"
 * :操作符用来定义变量、类的继承等
 ```
@@ -10,7 +11,6 @@ class MainActivity : AppCompatActivity()//继承类
 startActivity(Intent(this@MainActivity, SecondActivity::class.java))//得到SecondActivity对象
 ```
 ## 比较符"=="和"==="
-Kotlin 中没有基础数据类型，只有封装的数字类型，你每定义的一个变量，其实 Kotlin 帮你封装了一个对象，这样可以保证不会出现空指针。
 * "=="比较两个数值大小
 * "==="比较两个对象地址
 ```
