@@ -18,7 +18,7 @@ class demo1 {
     /**
      * Unit 可以省略
      */
-    fun demo1(): Unit  {
+    fun demo1(): Unit {
         var name: String//不指定变量值时需要指定变量类型
         var name1 = "SiberiaDante"//指定变量值时不需要指定变量类型
 
@@ -42,14 +42,14 @@ class demo1 {
         return a + b
     }
 
-    fun demo2(vararg v:Int){
-        for(vt in v){
+    fun demo2(vararg v: Int) {
+        for (vt in v) {
             print(vt)
         }
     }
 
     // 测试
     fun main(args: Array<String>) {
-        demo2(1,2,3,4,5)  // 输出12345
+        demo2(1, 2, 3, 4, 5)  // 输出12345
     }
 }
