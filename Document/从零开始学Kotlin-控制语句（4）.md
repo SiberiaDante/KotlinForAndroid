@@ -1,4 +1,5 @@
 从零开始学Kotlin-控制语句（4）
+### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)
 ## 条件控制-if
 ```
         var a=10
@@ -14,7 +15,6 @@
             print("a在1到10区间内")
         }
 ```
-
 ## 条件控制-when
 ```
         val x = 3
@@ -43,7 +43,6 @@
             print("$index 位置的数是 ${ints[index]}")
         }
 ```
-
 ## 循环控制-while/do...while
 ```
         var a = 10
@@ -57,4 +56,46 @@
         } while (a < 10)
 ```
 ## 跳转表达式 return、break、continue
-
+* 常规用法
+```
+    for (i in 1..10) {
+        if (i == 3) continue//i==3时跳出该循环执行下一轮循环
+            print(i)
+        if (i > 5) break//i>5时跳出循环或者说终止循环
+        if (i == 8) return //i==8时终止循环以及终止以下步骤
+     }
+```
+* 在 Kotlin 中任何表达式都可以用标签（label）来标记。 标签的格式为标识符后跟 @ 符号，例如：name@、number@等
+```
+number@ for (i in 1..10){
+}
+```
+* 标签结合break和continue使用
+```
+        loop1@ for (i in 1..100) {
+            loop2@ for (j in 1..100) {
+                if (i == j) break@loop1
+                if (i % j == 0) continue@loop1
+            }
+        }
+```
+* 标签结合return使用
+```
+    fun test5() {
+        var ints = arrayOf(0, 1, 2, 3, 4, 5)
+        /**
+         * 这种return其实是直接return了test5（）这个方法
+         */
+        ints.forEach {
+            if (it == 0) return
+            print(it)
+        }
+        /**
+         * 如果想只return到当前循环，则需要结合标签使用
+         */
+        ints.forEach lit@ {
+            if (it == 0) return@lit
+            print(it)
+        }
+    }
+```

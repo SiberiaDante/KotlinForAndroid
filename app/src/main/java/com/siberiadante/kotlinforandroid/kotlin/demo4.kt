@@ -57,4 +57,32 @@ class demo4 {
             if (i == 8) return //i==8时终止循环
         }
     }
+
+    fun test4() {
+        loop1@ for (i in 1..100) {
+            loop2@ for (j in 1..100) {
+                if (i == j) break@loop1
+                if (i % j == 0) continue@loop1
+            }
+        }
+    }
+
+    fun test5() {
+        var ints = arrayOf(0, 1, 2, 3, 4, 5)
+
+        /**
+         * 这种return其实是直接return了test5（）这个方法
+         */
+        ints.forEach {
+            if (it == 0) return
+            print(it)
+        }
+        /**
+         * 如果想只return到当前循环，则需要结合标签使用
+         */
+        ints.forEach lit@ {
+            if (it == 0) return@lit
+            print(it)
+        }
+    }
 }
