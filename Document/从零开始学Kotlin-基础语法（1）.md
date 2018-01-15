@@ -1,4 +1,4 @@
-# 从零开始学Kotlin-基础语法（1）
+### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)
 ### 注释
 ```aidl
     //单行注释
@@ -91,3 +91,4 @@ fun strToInt(str:String):Int?{
 print("不换行打印")
 println("换行打印")
 ```
+### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)

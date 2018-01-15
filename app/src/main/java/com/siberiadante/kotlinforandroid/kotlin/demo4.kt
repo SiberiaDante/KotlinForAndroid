@@ -80,8 +80,8 @@ class demo4 {
         /**
          * 如果想只return到当前循环，则需要结合标签使用
          */
-        ints.forEach lit@ {
-            if (it == 0) return@lit
+        ints.forEach currentLoop@ {
+            if (it == 0) return@currentLoop
             print(it)
         }
     }

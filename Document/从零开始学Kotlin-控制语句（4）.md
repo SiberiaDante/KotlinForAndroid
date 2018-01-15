@@ -93,9 +93,10 @@ number@ for (i in 1..10){
         /**
          * 如果想只return到当前循环，则需要结合标签使用
          */
-        ints.forEach lit@ {
-            if (it == 0) return@lit
+        ints.forEach currentLoop@ {
+            if (it == 0) return@currentLoop
             print(it)
         }
     }
 ```
+### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)
