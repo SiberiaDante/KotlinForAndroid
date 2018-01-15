@@ -54,6 +54,7 @@ class demo4 {
             if (i == 3) continue//i==3时跳出该循环执行下一轮循环
             print(i)
             if (i > 5) break//i>5时跳出循环或者说终止循环
+            if (i == 8) return //i==8时终止循环
         }
     }
 }
