@@ -1,5 +1,7 @@
 ## 从零开始学Kotlin-类和对象（5）
+
 ## 定义一个类
+* 定义一个类，使用关键字class声明，后面跟类名（不使用new）
 ```
     class demo5 {//定义一个类，使用关键字class声明，后面跟类名
 
@@ -9,9 +11,11 @@
         class empty//定义一个空类
     }
 ```
+
 ## 定义类的属性
 * 类的属性可以使用var和val定义
-``` class demo5 {
+```
+    class demo5 {
         var name: String = "SiberinDante"
         var age: Int = 18
         val gender: String = "男"
@@ -29,6 +33,7 @@
         }
     }
 ```
+
 ## 类的修饰符： classModifier 和 accessModifier
 * classModifier: 类属性修饰符，标示类本身特性。
 ```
@@ -46,6 +51,7 @@
     public     // 所有调用的地方都可见
     internal   // 同一个模块中可见
 ```   
+
 ##  构造器：
 * Koltin 中的类可以有一个 主构造器，以及一个或多个次构造器，主构造器是类头部的一部分，位于类名称之后,主构造器中不能包含任何代码
 ```
@@ -72,7 +78,7 @@
         constructor(age: Int, name: String) {}
     }
 ```
-* 如果类有主构造函数，每个次构造函数都要，或直接或间接通过另一个次构造函数代理主构造函数。在同一个类中代理另一个构造函数使用 this 关键字：
+* 如果类有主构造函数，每个次构造函数都要直接或间接通过另一个次构造函数代理主构造函数。在同一个类中代理另一个构造函数使用 this 关键字：
 ```
     class consClass constructor(name: String) {
         constructor(name: String, age: Int) : this(name) {
@@ -88,6 +94,7 @@
     class consClass2 private constructor() {}
 ```
 * 在 JVM 虚拟机中，如果主构造函数的所有参数都有默认值，编译器会生成一个附加的无参的构造函数，这个构造函数会直接使用默认值。
+
 ## 抽象类
 * 抽象类使用abstract修饰，抽象成员在类中不存在具体的实现。无需对抽象类或抽象成员标注open注解。
 ```
@@ -100,6 +107,7 @@
 ```
 
 ## 嵌套类
+* 类中嵌套一个类
 ```
     class OuterClass {//外部类
         class NestedClass {//嵌套类
@@ -111,6 +119,7 @@
         println("name is $name")
     }
 ```
+
 ## 内部类
 * 内部类使用 inner 关键字来表示。内部类会带有一个对外部类的对象的引用，所以内部类可以访问外部类成员属性和成员函数。
 ```
@@ -133,6 +142,7 @@
         println(demo2)
     }
 ```
+
 ## 匿名内部类
 * 使用对象表达式来创建匿名内部类
 ```
