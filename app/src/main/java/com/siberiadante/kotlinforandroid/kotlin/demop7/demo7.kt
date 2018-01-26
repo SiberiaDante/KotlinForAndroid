@@ -1,4 +1,6 @@
-package com.siberiadante.kotlinforandroid.kotlin.demo7
+package com.siberiadante.kotlinforandroid.kotlin.demop7
+
+import com.siberiadante.kotlinforandroid.kotlin.demo7.InterfaceDemo7
 
 /**
  * @Created  SiberiaDante
@@ -20,4 +22,12 @@ class demo7 : InterfaceDemo7 {
 //        super.voidTwo()
 //    }
 
+    class demo : InterfaceDemo71, InterfaceDemo72 {
+        override fun showName() {
+        }
+        override fun showAge() {//两个接口都有showAge()方法
+            super<InterfaceDemo71>.showAge()//使用super.<接口名>.方法名指定使用哪个方法
+            super<InterfaceDemo72>.showAge()
+        }
+    }
 }

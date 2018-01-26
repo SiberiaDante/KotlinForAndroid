@@ -48,7 +48,30 @@
 //    }
     }
 ```
-* 类实现多个接口，且接口有一个共同的方法
+* 类实现多个接口，且接口有一个共同的方法，需要指明类如何实现它们:使用super.<接口名>.方法名指定使用哪个方法
 ```
-
+    interface InterfaceDemo71 {
+        fun showName()
+        fun showAge() {
+            print(18)
+        }
+    }
+    interface InterfaceDemo72 {
+        fun showName() {
+            print("SiberiaDante")
+        }
+        fun showAge() {
+            print(18)
+        }
+    }
+```
+```
+    class demo : InterfaceDemo71, InterfaceDemo72 {
+        override fun showName() {
+        }
+        override fun showAge() {//两个接口都有showAge()方法
+            super<InterfaceDemo71>.showAge()//使用super.<接口名>.方法名指定使用哪个方法
+            super<InterfaceDemo72>.showAge()
+        }
+    }
 ```
