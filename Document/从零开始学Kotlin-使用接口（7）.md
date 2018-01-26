@@ -1,4 +1,6 @@
-从零开始学Kotlin-接口（7）
+# 从零开始学Kotlin-使用接口（7）
+
+### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)
 
 ## 定义接口
 * 使用关键字interface定义接口
@@ -9,6 +11,8 @@
 * 类或对象可以实现一个或者多个接口
 ```
     class demo7 : InterfaceDemo7 {
+    }
+    class demo : InterfaceDemo71, InterfaceDemo72 {
     }
 ```
 
