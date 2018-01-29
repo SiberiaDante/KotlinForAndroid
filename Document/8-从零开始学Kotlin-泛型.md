@@ -194,7 +194,6 @@
         personList.add(student)//set 设置值,编译通过
         personList[0].myName// get 取值,编译通过
     }
-
 ```
 > 作为 < out T>的类型，由于所有类型均为T的下限，无法得知其确定的类型，所以不能使用 set 方法，只能 get
 ```
@@ -211,9 +210,7 @@
         personList[0].myName// get 取值，编译通过
     }
 ```
-
 > 作为 < in T>的类型
-
 ```
     fun main() {
         val person = Person("PersonA")
@@ -228,7 +225,6 @@
          */
         personList[0].myName// get 取值,编译不通过
     }
-
 ```
 
 ### 星投射
