@@ -1,4 +1,4 @@
-# 从零开始学Kotlin-泛型（8）
+# 8-从零开始学Kotlin-泛型
 
 ### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)
 

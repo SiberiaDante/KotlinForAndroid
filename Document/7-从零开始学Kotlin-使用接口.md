@@ -1,4 +1,4 @@
-# 从零开始学Kotlin-使用接口（7）
+# 7-从零开始学Kotlin-使用接口
 
 ### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)
 

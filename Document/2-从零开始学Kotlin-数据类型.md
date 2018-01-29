@@ -1,4 +1,4 @@
-# 从零开始学Kotlin-数据类型（2）
+# 2-从零开始学Kotlin-数据类型
 
 ### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)
 

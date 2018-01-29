@@ -1,4 +1,4 @@
-## 从零开始学Kotlin-类的继承（6）
+# 6-从零开始学Kotlin-类的继承
 
 ### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)
 

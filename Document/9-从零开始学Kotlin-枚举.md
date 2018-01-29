@@ -1,4 +1,4 @@
-# 从零开始学Kotlin-枚举（9）
+# 9-从零开始学Kotlin-枚举
 
 ### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)
 
