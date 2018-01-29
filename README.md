@@ -24,4 +24,4 @@
 
 
 
-学习参考 [【菜鸟教程-Kotlin】](http://www.runoob.com/kotlin/kotlin-generics.html)以及部分网络资源
+学习参考 [Kotlin官方文档](http://www.kotlincn.net/docs/reference/)、[【菜鸟教程-Kotlin】](http://www.runoob.com/kotlin/kotlin-generics.html)以及部分网络资源

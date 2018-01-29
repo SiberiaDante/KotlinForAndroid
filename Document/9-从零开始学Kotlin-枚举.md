@@ -1,8 +1,9 @@
 # 从零开始学Kotlin-枚举（9）
 
-> 一个类的对象是有限且固定的，这种实例有限且固定的类称为枚举类;
+### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)
 
 ## 枚举的定义
+* 一个类的对象是有限且固定的，这种实例有限且固定的类称为枚举类;
 * 枚举常量用逗号分隔,每个枚举常量都是一个对象;
 ```
     enum class EnumDemo9 {

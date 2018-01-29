@@ -1,4 +1,8 @@
 # 从零开始学Kotlin-数据类型（2）
+
+### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)
+
+
 ## 基本数据类型
 * Kotlin 的基本数值类型包括 Byte、Short、Int、Long、Float、Double 等；
 ```

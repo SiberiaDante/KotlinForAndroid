@@ -1,5 +1,8 @@
 # 从零开始学Kotlin-泛型（8）
 
+### [从零开始学Kotlin基础篇系列文章](https://github.com/SiberiaDante/KotlinForAndroid)
+
+
 >与 Java 一样，Kotlin 也提供泛型，为类型安全提供保证，消除类型强转的烦恼。
 
 ## 泛型类的基本使用
