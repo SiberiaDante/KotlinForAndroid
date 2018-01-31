@@ -9,4 +9,7 @@ package com.siberiadante.kotlinforandroid.kotlin.demop10
  * @GitHub: https://github.com/SiberiaDante
  * @Blogs: http://www.cnblogs.com/shen-hua/
  */
-class ClassDemo11
+
+fun ClassDemo11.showMsg(msg: String) {
+
+}

@@ -103,8 +103,103 @@
 ```
 
 ## 作用域
+* 通常扩展函数或属性定义在顶级包下
+```
+    //1、在包名.demop10下创建一个类 ClassDemo11
+    package com.siberiadante.kotlinforandroid.kotlin.demop10
+    class ClassDemo11
+
+    //2、新建一个 ExtendFunction.kt 文件，在改文件中创建 ClassDemo11 的扩展函数
+    package com.siberiadante.kotlinforandroid.kotlin.demop10
+    fun ClassDemo11.showMsg(msg: String) {
+    // ClassDemo11 的扩展函数
+    }
+```
+* 要使用所定义包之外的一个扩展, 通过import导入扩展的函数名进行使用；
+```
+    //ClassDemo12 中使用扩展函数
+    package com.siberiadante.kotlinforandroid.kotlin
+    //常规导入
+    import com.siberiadante.kotlinforandroid.kotlin.demop10.ClassDemo11
+    import com.siberiadante.kotlinforandroid.kotlin.demop10.showMsg
+    //导入demop10下的一切
+    //import com.siberiadante.kotlinforandroid.kotlin.demop10.*
+
+    class ClassDemo12 {//调用扩展函数
+        fun main(classDemo11: ClassDemo11) {
+            classDemo11.showMsg("调用另一个类的扩展函数")
+        }
+    }
+```
 
 ## 扩展声明为成员
+* 在一个类的内部可以为另一个类声明扩展，在这个扩展中，有个多个隐含的接收者，其中扩展方法定义所在类的实例称为分发接收者，而扩展方法的目标类型的实例称为扩展接受者；
+```
+    class ClassA {//扩展接收者
+        fun showMsg() { println("ClassA showMsg") }
+    }
 
+    class ClassB {//分发接收者
+        fun showMsg() { println("ClassB showMsg") }
+
+        fun ClassA.printMsg() {
+        // 为 ClassA 声明的扩展函数
+        }
+    }
+```
+* 调用某一个函数，而该函数在分发接受者和扩展接受者均存在，则以扩展接收者优先；要引用分发接收者的成员需要使用限定的 this 语法；
+```
+    class ClassA {//扩展接收者
+        fun showMsg() { println("ClassA showMsg") }
+    }
+
+    class ClassB {//分发接收者
+        fun showMsg() { println("ClassB showMsg") }
+
+        fun ClassA.printMsg() {
+            showMsg()   //扩展接收者（ClassA）的函数
+            this@ClassB.showMsg()   //分发接收者（ClassB）的函数;语法：this@分发接收者.函数
+        }
+    }
+```
+* 以成员的形式定义的扩展函数, 可以声明为 open , 而且可以在子类中覆盖;
+```
+    open class ClassC
+
+    open class ClassC1 : ClassC()
+
+    open class ClassD {
+        open fun ClassC.showMsg() {//ClassC 的扩展函数
+            print("ClassC msg --- ClassD")
+        }
+
+        open fun ClassC1.showMsg() {//ClassC1 的扩展函数
+            print("ClassC1 msg --- ClassD")
+        }
+
+        fun printMsg(c: ClassC) {
+            c.showMsg()//调用ClassC 的扩展函数
+        }
+    }
+
+    class ClassD1 : ClassD() {
+        override fun ClassC.showMsg() {
+            print("ClassC msg --- ClassD1")
+        }
+
+        override fun ClassC1.showMsg() {
+            print("ClassC1 msg --- ClassD1")
+        }
+    }
+
+    fun main9() {
+        //ClassD调用ClassC的showMsg
+        ClassD().printMsg(ClassC()) // 输出：ClassC msg --- ClassD
+        //调用ClassD1调用自己重载的ClassC的showMsg
+        ClassD1().printMsg(ClassC())    //输出：ClassC msg --- ClassD1
+        //ClassD调用printMsg，printMsg受ClassC限制
+        ClassD().printMsg(ClassC1())    //输出：ClassC msg --- ClassD
+    }
+```
 
 
