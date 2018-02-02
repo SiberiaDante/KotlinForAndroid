@@ -19,6 +19,7 @@
 #### [7-从零开始学Kotlin基础篇-使用接口](https://github.com/SiberiaDante/KotlinForAndroid/blob/master/Document/7-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6Kotlin-%E4%BD%BF%E7%94%A8%E6%8E%A5%E5%8F%A3.md)
 #### [8-从零开始学Kotlin基础篇-泛型](https://github.com/SiberiaDante/KotlinForAndroid/blob/master/Document/8-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6Kotlin-%E6%B3%9B%E5%9E%8B.md)
 #### [9-从零开始学Kotlin基础篇-枚举](https://github.com/SiberiaDante/KotlinForAndroid/blob/master/Document/9-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6Kotlin-%E6%9E%9A%E4%B8%BE.md)
+#### [10-从零开始学Kotlin基础篇-扩展函数](https://github.com/SiberiaDante/KotlinForAndroid/blob/master/Document/10-%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%AD%A6Kotlin-%E6%89%A9%E5%B1%95%E5%87%BD%E6%95%B0.md)
 
 
 
