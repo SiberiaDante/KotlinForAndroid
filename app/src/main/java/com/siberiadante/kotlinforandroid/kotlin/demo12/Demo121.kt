@@ -8,6 +8,4 @@ package com.siberiadante.kotlinforandroid.kotlin.demo12
 @Blog： http://www.cnblogs.com/shen-hua/
  */
 class Demo121 {
-    fun main() {
-    }
 }
