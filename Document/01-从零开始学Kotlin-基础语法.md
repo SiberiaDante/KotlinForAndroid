@@ -42,10 +42,11 @@
      * Unit 可以省略
      */
     fun demo1(): Unit  {}
+    fun demo2(){}
 ```
 ```aidl
     fun demo1(name: String, age: Int) {
-        print("My Name is " + name)
+        print("My Name is " + name,"And My Age is"+age)
     }
 ```
 * 有返回值的方法
@@ -63,7 +64,7 @@
         return a + b
     }
 ```
-* 变长参数方法(用varargs关键字标识)
+* 变长参数方法(用vararg关键字标识)
 ```
 fun showNums(vararg nums:Int){
     for(num in nums){//for 循环输出

@@ -3,6 +3,9 @@
     <img src="https://github.com/SiberiaDante/KotlinForAndroid/blob/master/assets/bg_kotlin.jpg"/>
 </div>
 
+## module-app
+WanAndroid练手项目
+
 ## 为什么选择Kotlin
 >* 简洁：大大减少样板代码的数量
 >* 安全：避免空指针异常等整个类的错误

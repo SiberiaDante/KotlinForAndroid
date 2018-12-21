@@ -97,4 +97,3 @@ val arr2 = Array(5, { i -> (i * 2) })//[0,2,4,6,8]
 ```
 * 除了类Array，还有ByteArray, ShortArray, IntArray，用来表示各个类型的数组，省去了装箱操作，因此效率更高，其用法同Array一样：
 
-[关注我-Github-https://github.com/SiberiaDante](https://github.com/SiberiaDante)
